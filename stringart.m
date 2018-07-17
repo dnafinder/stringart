@@ -32,9 +32,9 @@ function stringart(varargin)
 
 p = inputParser;
 addParameter(p,'Sides',3, @(x) validateattributes(x,{'numeric'},{'scalar','real','finite','integer','>=',3,'nonnan','nonempty'}));
-addParameter(p,'Crossed',0, @(x) validateattributes(x,{'numeric'},{'scalar','real','integer','>=',0,'<=',1,'nonnan','nonempty'}));
+addParameter(p,'Crossed',0, @(x) validateattributes(x,{'numeric'},{'scalar','real','finite','integer','>=',0,'<=',1,'nonnan','nonempty'}));
 addParameter(p,'Density',40, @(x) validateattributes(x,{'numeric'},{'scalar','real','finite','integer','>=',10,'nonnan','nonempty'}));
-addParameter(p,'Color',[0 0 0], @(x) validateattributes(x,{'numeric'},{'row','real','ncols',3,'>=',0,'<=',1,'nonnan','nonempty'}));
+addParameter(p,'Color',[0 0 0], @(x) validateattributes(x,{'numeric'},{'row','real','finite','ncols',3,'>=',0,'<=',1,'nonnan','nonempty'}));
 parse(p,varargin{:})
 
 hold on
