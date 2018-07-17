@@ -12,7 +12,8 @@ Syntax: 	stringart(varargin)
           'Density' - The number of pins you want to use for each side default = 40)
           'Color' - 1x3 vector that indicates the colors of the wires (default = [0 0 0] black)
  
-           
+![](https://github.com/dnafinder/stringart/blob/master/stringart.png)
+
 Created by Giuseppe Cardillo
 giuseppe.cardillo-edta@poste.it
  
