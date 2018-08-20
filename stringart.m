@@ -43,7 +43,8 @@ set(gcf,'Color', 'white');
 set(gca,'XColor','w','YColor','w')
 
 %Matrix preallocation
-MX=zeros(p.Results.Density,p.Results.Sides+1); MY=MX;
+MX=zeros(p.Results.Density,p.Results.Sides+1); 
+MY=MX;
 switch p.Results.Crossed
     case 0
         mp=0.5; %middle point of the side
@@ -52,12 +53,14 @@ switch p.Results.Crossed
     case 1
         mp=linspace(0,0.5,p.Results.Density); %middle point of the side
         h=mp.*tan(pi*(0.5-1/p.Results.Sides)); %apotema
-        MX(:,1)=mp'; MY(:,1)=h';
+        MX(:,1)=mp'; 
+        MY(:,1)=h';
 end
 
 %Rotate around incentrum by theta angle
+k=(2*pi)/p.Results.Sides;
 for I=1:p.Results.Sides
-    theta=(2*pi)*I/p.Results.Sides;
+    theta=k*I;
     Rot=[cos(theta) -sin(theta); sin(theta) cos(theta)];
     t=(Rot*(eye(2)*[MX(:,1)';MY(:,1)']-[mp(end);h(end)]))+[mp(end);h(end)];
     MX(:,I+1)=t(1,:)'; MY(:,I+1)=t(2,:)';  
