@@ -10,7 +10,7 @@ The function draws string-art patterns on regular polygons with a configurable n
 
 🛠 Installation
 Download or clone this repository from GitHub:
-https://github.com/dnafinder/REPOSITORY_NAME
+https://github.com/dnafinder/stringart
 
 Add the folder containing stringart.m to your MATLAB path using the Add Folder to Path option or the addpath command. No additional toolboxes are required; the function relies only on core MATLAB graphics.
 
