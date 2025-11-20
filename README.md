@@ -52,12 +52,12 @@ If you use this code in scientific, educational, or technical work, please cite 
 Cardillo G. (2018)
 "Stringart: Play with geometry and Bézier's quadratic curve".
 Available from GitHub:
-https://github.com/dnafinder/REPOSITORY_NAME
+https://github.com/dnafinder/stringart
 
 👤 Author
 Author: Giuseppe Cardillo
-Email: giuseppe.cardillo-edta@poste.it
-GitHub: https://github.com/dnafinder/REPOSITORY_NAME
+Email: giuseppe.cardillo.75@gmail.com
+GitHub: https://github.com/dnafinder
 
 ⚖️ License
 This project is distributed under the MIT License. You are free to use, modify, and redistribute the code, provided that the original copyright notice and license text are preserved. The full license terms are provided in the LICENSE file in this GitHub repository.
